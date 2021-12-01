@@ -1,19 +1,13 @@
 public class Principal {
     public static void main(String[] args) {
 
-        Estacionamento estacionamento = new Estacionamento;
-        estacionamento.setNumeroVagasCarros(1000);
-        estacionamento.setNumeroVagasMotos(200);
-        estacionamento.setNumeroVagasOnibus(10);
-        estacionamento.setNumeroVagasBicicletas(50);
+        Estacionamento estacionamento = new Estacionamento();
+        estacionamento.setNumeroVagasVeiculos(1000);
 
-        estacionamento.entraCarro();
-        estacionamento.saiCarro();
-        estacionamento.entraMoto();
-        estacionamento.saiMoto();
-        estacionamento.entraOnibus();
-        estacionamento.saiOnibus();
-
-        estacionamento.getVagasCarros()
-    }
+        estacionamento.entraVeiculo("XXX-1234");
+        estacionamento.entraVeiculo("YYY-4321");
+        estacionamento.mostrarCarrosEstacionados();
+        estacionamento.saiVeiculo("YYY-4321");
+        estacionamento.mostrarCarrosEstacionados();
+    };
 }

@@ -1,7 +1,7 @@
-public class Carro {
+public class Veiculo {
     private String placa;
 
-    public Carro(String placa) {
+    public Veiculo(String placa) {
         this.placa = placa;
     }
 
